@@ -1,38 +1,246 @@
-.App {
+
+
+
+.navbar {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.navbar button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.navbar button:hover {
+  background-color: #dbe0e6;
+}
+
+.navbar button.active {
+  background-color: #97a8b0;
+  color: #fff;
+}
+
+main {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.author-wrapper main {
+  min-height: 100vh;
+  text-align: left;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  min-height: calc(100vh - 55px);
+}
+
+.tabcontent ul {
+  text-align: left;
+}
+.tabcontent ul li {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.intro-wrapper {
+  padding: 15px;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slideshow-wrapper {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slides {
+  display: none;
+}
+
+.slides.active {
+  display: block;
+  position: relative;
+}
+
+.slides img {
+  height: 500px;
+  width: 500px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  font-size: 15px;
+  position: absolute;
+  width: 100%;
   text-align: center;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #fffdf1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  color: black;
+}
+
+.sidebar ul li a {
+  margin-right: 10px;
+}
+
+section.content {
+  margin-left: 200px;
+  padding: 25px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  section.content {
+    margin-left: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@-webkit-keyframes fade {
   from {
-    transform: rotate(0deg);
+    opacity: 0.4;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tabcontent.active {
+    display: flex;
+  }
+  .tabcontent.active#char img {
+    order: 2;
+  }
+  .tabcontent.active#char ul {
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar button {
+    font-size: 14px;
+    padding: 14px 12px;
+  }
+  .tabcontent.active {
+    display: block;
+  }
+  .tabcontent.active img {
+    width: 100%;
+    height: inherit;
+  }
+  .intro-wrapper button {
+    min-width: 200px;
   }
 }

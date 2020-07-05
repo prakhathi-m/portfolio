@@ -1,0 +1,72 @@
+header {
+  background: white;
+  z-index: 1;
+
+  ul {
+    margin: 0;
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+}
+.wrapper {
+  padding: 75px 0 0;
+  .sidenav {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    background: #eaf4f9;
+
+    figure {
+    }
+    .contact {
+      a {
+        padding: 5px;
+        &#linkedin {
+          color: #0073b1;
+          &:hover {
+            color: #006097;
+          }
+        }
+        &#github {
+          color: #000;
+          &:hover {
+            color: #031705;
+          }
+        }
+        &:hover {
+          // transform: scale(1.5);
+          transition: all 1s ease;
+        }
+      }
+    }
+  }
+  article {
+    margin-left: 41%;
+    margin-right: 20px;
+    .section {
+      padding: 25px;
+      // padding-left: 20%;
+      &:nth-child(2n-1) {
+        // background: #f9f7f7;
+      }
+      &.education {
+        // padding: 10% 0 10% 20%;
+      }
+
+      .accordion {
+        .card {
+          border-left: 0;
+          border-right: 0;
+        }
+      }
+    }
+  }
+}
