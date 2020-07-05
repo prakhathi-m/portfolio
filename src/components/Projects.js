@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.scss";
 import { FaLink, FaGithub, FaDownload } from "react-icons/fa";
 
 const Projects = () => {

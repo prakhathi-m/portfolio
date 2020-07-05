@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "./App.scss";
-// import { FaHome } from "react-icons/fa";
+import "../styles/App.scss";
 import AboutMe from "./AboutMe";
 
 const App = () => {

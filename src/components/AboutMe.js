@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./aboutme.scss";
 import { FaHome, FaLinkedin, FaGithub } from "react-icons/fa";
+import "../styles/aboutme.scss";
 import Projects from "./Projects";
 import Home from "./Home";
 import Experience from "./Experience";
@@ -26,7 +26,7 @@ export default function AboutMe() {
             <h1 className="mb-3">Prakhathi Murugesan</h1>
             <figure>
               <img
-                src={require("./assets/profile_pic.jpg")}
+                src={require("../assets/profile_pic.jpg")}
                 alt="Profile"
                 style={{ width: "50%", borderRadius: "50%" }}
               />
