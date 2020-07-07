@@ -5,56 +5,96 @@ export default function Home() {
     <React.Fragment>
       <section name="education" className="section education">
         <h2 className="text-center">Education</h2>
-        <div>
-          <div className="d-flex">
-            <div className="col-md-4 col-lg-4 col-12 pl-0">
-              <strong>University at Buffalo</strong>
-              <label className="d-block">
-                The State University of New York
-              </label>
-              <label className="label-lite">Aug 2019 - Dec 2020</label>
-            </div>
-            <div className="col-md-8 col-lg-8 col-12">
-              <div>
-                <div>
-                  <strong>Master of Science in Computer Science</strong>
+        <div className="row">
+          <div className="col-xl-6 col-lg-6 col-md-6 col-12 mb-2">
+            <div class="card">
+              <figure style={{ background: "#015dbc" }}>
+                <img
+                  src={require("../assets/ub.jpg")}
+                  class="card-img-top"
+                  width={250}
+                  alt="..."
+                />
+                <figcaption>
+                  <strong class="card-title">University at Buffalo</strong>
+                  <span className="d-block">
+                    The State University of New York
+                  </span>
+                </figcaption>
+              </figure>
+
+              <div className="card-header">
+                <div className="d-flex justify-content-between">
+                  <h5 className="m-0">Master of Science</h5>
+
+                  <span>GPA 3.7/4</span>
                 </div>
-                <label>GPA 3.7/4</label>
+                <strong className="d-block">Computer Science</strong>
+
+                <span className="label-lite">Aug 2019 - Dec 2020</span>
               </div>
-              <div className="label-lite">Coursework:</div>
-              <p>
-                Introduction to Machine Learning, Information Retrieval,
-                Algorithms Analysis, and Design, Data-Intensive Computing, Data
-                Models and Query languages, Distributed Systems* and Blockchain*
-                <label>(* - planned for upcoming semesters)</label>
-              </p>
+              <div class="card-body">
+                <div className="label-lite">Coursework:</div>
+                <p className="card-text">
+                  <ul>
+                    <li>Introduction to Machine Learning</li>
+                    <li>Information Retrieval</li>
+                    <li>Algorithms Analysis and Design</li>
+                    <li>Data-Intensive Computing</li>
+                    <li>Data Models and Query languages</li>
+                    <li>Distributed Systems*</li>
+                    <label>(* - planned for upcoming semesters)</label>
+                  </ul>
+                </p>
+                <a href="#" class="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
             </div>
           </div>
-          <div className="d-flex">
-            <div className="col-md-4 col-lg-4 col-12 pl-0">
-              <div>
-                <strong>Coimbatore Institute of Technology</strong>
-              </div>
-              <label className="d-block">India</label>
-              <label className="label-lite">July 2012 - May 2016</label>
-            </div>
-            <div className="col-md-8 col-lg-8 col-12">
-              <div>
-                <div>
-                  <strong>
-                    Bachelor of Technology in Information Technology
+          <div className="col-xl-6 col-lg-6 col-md-6 col-12 mb-2">
+            <div class="card">
+              <figure style={{ background: "#680000" }}>
+                <img
+                  src={require("../assets/cit.png")}
+                  class="card-img-top"
+                  width={150}
+                  alt="..."
+                />
+                <figcaption>
+                  <strong class="card-title">
+                    Coimbatore Institute of Technology
                   </strong>
-                </div>
-                <label>GPA 3.7/4</label>
-              </div>
-              <div className="label-lite">Coursework:</div>
+                  <span className="d-block">India</span>
+                </figcaption>
+              </figure>
 
-              <p>
-                Data Structure and Algorithms, Database Management System,
-                Object-Oriented Programming, Operating Systems, Web
-                Technologies, Software Engineering, Data Warehousing and Data
-                Mining.
-              </p>
+              <div className="card-header">
+                <div className="d-flex justify-content-between">
+                  <h5 className="m-0">Bachelor of Technology</h5>
+                  <span>GPA 3.7/4</span>
+                </div>
+                <strong className="d-block">Information Technology</strong>
+
+                <span className="label-lite">July 2012 - May 2016</span>
+              </div>
+              <div class="card-body">
+                <div className="label-lite">Coursework:</div>
+                <p className="card-text">
+                  <ul>
+                    <li>Data Structure and Algorithms</li>
+                    <li>Database Management System</li>
+                    <li>Object-Oriented Programming</li>
+                    <li>Operating Systems</li>
+                    <li>Web Technologies</li>
+                    <li>Software Engineering</li>
+                    <li>Data Warehousing and Data Mining.</li>
+                  </ul>
+                </p>
+                <a href="#" class="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -6,17 +6,32 @@ import Home from "./Home";
 import Experience from "./Experience";
 
 export default function AboutMe() {
-  const [tab, setTab] = useState("home");
+  const [tab, setTab] = useState("projects");
 
   return (
     <div>
-      <header className="d-flex position-fixed w-100 p-2 bd-highlight">
+      <header className="d-flex position-fixed w-100 p-2 border-bottom">
         <ul>
-          <li onClick={() => setTab("home")}>
-            <FaHome size={20} />
+          <li
+            onClick={() => setTab("home")}
+            className={tab === "home" ? "active" : ""}
+          >
+            <FaHome size={20} color={tab === "home" ? "#1b4d6f" : "#000"} />
           </li>
-          <li onClick={() => setTab("projects")}>Projects</li>
-          <li onClick={() => setTab("experience")}>Experience</li>
+          <li
+            onClick={() => setTab("projects")}
+            className={tab === "projects" ? "active" : ""}
+          >
+            Projects
+            <span class="menu-underline"></span>
+          </li>
+          <li
+            onClick={() => setTab("experience")}
+            className={tab === "experience" ? "active" : ""}
+          >
+            Experience
+            <span class="menu-underline"></span>
+          </li>
           {/* <li>Skills</li> */}
         </ul>
       </header>

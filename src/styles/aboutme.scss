@@ -9,11 +9,28 @@ header {
       list-style: none;
       padding: 10px;
       cursor: pointer;
+      .menu-underline {
+        display: block;
+        height: 1px;
+        background: #1b4d6f;
+        width: 0;
+      }
+      &:hover,
+      &.active {
+        color: #1b4d6f;
+        .menu-underline {
+          width: 100%;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
+        }
+      }
     }
   }
 }
 .wrapper {
-  padding: 75px 0 0;
+  padding: 60px 0 0;
   .sidenav {
     width: 40%;
     height: 100%;
@@ -25,6 +42,9 @@ header {
     background: #eaf4f9;
 
     figure {
+      img {
+        margin-bottom: 20px;
+      }
     }
     .contact {
       a {
@@ -51,20 +71,134 @@ header {
   article {
     margin-left: 41%;
     margin-right: 20px;
-    .section {
+    section {
       padding: 25px;
-      // padding-left: 20%;
+      h2 {
+        margin-bottom: 20px;
+      }
       &:nth-child(2n-1) {
         // background: #f9f7f7;
       }
       &.education {
         // padding: 10% 0 10% 20%;
+        .card {
+          height: 100%;
+        }
+        figure {
+          position: relative;
+          margin: 0;
+          text-align: center;
+          height: 400px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 50%;
+          }
+          figcaption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Black see-through */
+            color: #f1f1f1;
+            width: 100%;
+            padding: 5px;
+          }
+        }
       }
 
       .accordion {
         .card {
           border-left: 0;
           border-right: 0;
+          ul {
+            padding-bottom: 25px;
+          }
+        }
+      }
+    }
+
+    .project-wrapper {
+      .border {
+        padding: 5px;
+        height: 100%;
+      }
+      figure {
+        position: relative;
+        padding: 0;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        figcaption {
+          padding: 20px 30px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          height: 100%;
+          width: 100%;
+          h5 {
+            padding-bottom: 15px;
+            &:after {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background: #fff;
+              content: "";
+              -webkit-transform: translate3d(-100%, 0, 0);
+              transform: translate3d(-100%, 0, 0);
+            }
+          }
+          p {
+            margin: 0;
+            padding-bottom: 10px;
+            -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+          }
+          a {
+            color: white;
+            &:hover {
+              color: #c1c4c5;
+            }
+          }
+          hr {
+            margin: 5px 0;
+            padding: 0;
+            border-color: #fff;
+          }
+          > * {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 20px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+          }
+        }
+        &.effect {
+          background: #858586;
+          color: #fff;
+          overflow: hidden;
+          &:hover {
+            img {
+              opacity: 0.2;
+            }
+            figcaption {
+              h5:after {
+                transform: translate3d(0, 0, 0);
+              }
+              p {
+                transform: translate3d(0, 0, 0);
+              }
+              > * {
+                opacity: 1;
+              }
+            }
+          }
         }
       }
     }
