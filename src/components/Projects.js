@@ -8,7 +8,7 @@ const Projects = () => {
         <h2>Projects</h2>
 
         <div className="row">
-          <div className="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
+          <div className="col-xl-6 col-lg-12 col-md-12 col-12 mb-4">
             <div className="border">
               <figure className="effect">
                 <img src={require("../assets/stearns_1.png")} />
@@ -36,7 +36,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
+          <div className="col-xl-6 col-lg-12 col-md-12 col-12 mb-4">
             <div className="border">
               <figure className="effect">
                 <img src={require("../assets/twine.png")} />
@@ -63,7 +63,7 @@ const Projects = () => {
               </figure>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
+          <div className="col-xl-6 col-lg-12 col-md-12 col-12 mb-4">
             <div className="border">
               <figure className="effect">
                 <img src={require("../assets/twitter.png")} />
@@ -98,7 +98,7 @@ const Projects = () => {
               </figure>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
+          <div className="col-xl-6 col-lg-12 col-md-12 col-12 mb-4">
             <div className="border">
               <figure className="effect">
                 <img src={require("../assets/em_app.png")} />
