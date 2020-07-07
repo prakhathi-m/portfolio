@@ -29,6 +29,7 @@ header {
     }
   }
 }
+
 .wrapper {
   padding: 60px 0 0;
   .sidenav {
@@ -40,6 +41,7 @@ header {
     text-align: center;
     flex-direction: column;
     background: #eaf4f9;
+    position: fixed;
 
     figure {
       img {
@@ -81,14 +83,25 @@ header {
       }
       &.education {
         // padding: 10% 0 10% 20%;
+        .row {
+          > div {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding-right: 15px;
+            padding-left: 15px;
+          }
+        }
         .card {
           height: 100%;
+        }
+        .mobile-view {
+          display: none;
         }
         figure {
           position: relative;
           margin: 0;
           text-align: center;
-          height: 400px;
+          height: 300px;
           display: flex;
           justify-content: center;
           flex-direction: column;
@@ -201,6 +214,59 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1299px) {
+  .wrapper article section.education {
+    .row {
+      a {
+        display: none;
+      }
+      > div {
+        flex: 0 0 100%;
+        max-width: 100%;
+        .mobile-view {
+          display: flex;
+          figure {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+          }
+          > div:last-child {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+    .card {
+      display: flex;
+      flex-direction: row;
+      figure.desktop-view {
+        width: 300px;
+        height: 100%;
+      }
+      > div:last-child {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 756px) {
+  .wrapper {
+    .sidenav {
+      width: 100%;
+      display: block;
+      position: relative;
+      .contact {
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    article {
+      margin: 20px;
     }
   }
 }

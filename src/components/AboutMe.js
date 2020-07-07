@@ -36,7 +36,7 @@ export default function AboutMe() {
         </ul>
       </header>
       <div className="wrapper">
-        <nav className="sidenav position-fixed">
+        <nav className="sidenav">
           <div>
             <h1 className="mb-3">Prakhathi Murugesan</h1>
             <figure>
