@@ -17,10 +17,6 @@ export default function Author(props) {
               friendly, responsive web applications.
             </li>
             <li>
-              Spearheaded the initiative to change the redux based routing into
-              react-router based routing throughout the application.
-            </li>
-            <li>
               Developed mobile-friendly landing page coupled with in-built
               carousel and animations.{" "}
             </li>
