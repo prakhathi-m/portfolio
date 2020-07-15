@@ -227,15 +227,17 @@ header {
       > div {
         flex: 0 0 100%;
         max-width: 100%;
-        .mobile-view {
+        figure.mobile-view {
           display: flex;
-          figure {
-            width: 60px;
-            height: 60px;
-            margin-right: 20px;
-          }
-          > div:last-child {
-            flex-grow: 1;
+          width: 60px;
+          height: 60px;
+          margin-right: 20px;
+        }
+        .card-header {
+          .d-flex {
+            > div:last-child {
+              flex-grow: 1;
+            }
           }
         }
       }
@@ -255,6 +257,9 @@ header {
 }
 
 @media (max-width: 756px) {
+  h1 {
+    font-size: 32px;
+  }
   .wrapper {
     .sidenav {
       width: 100%;
@@ -266,7 +271,12 @@ header {
       }
     }
     article {
-      margin: 20px;
+      margin: 0;
+      section {
+        h2 {
+          font-size: 30px;
+        }
+      }
     }
   }
 }

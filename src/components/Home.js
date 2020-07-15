@@ -29,8 +29,11 @@ export default function Home() {
               </a>
               <div>
                 <div className="card-header">
-                  <div className="mobile-view">
-                    <figure style={{ background: "#015dbc" }}>
+                  <div className="d-flex">
+                    <figure
+                      style={{ background: "#015dbc" }}
+                      className="mobile-view"
+                    >
                       <img
                         src={require("../assets/ub.jpg")}
                         class="card-img-top"
@@ -38,15 +41,17 @@ export default function Home() {
                         alt="..."
                       />
                     </figure>
-                    <div>
+                    <div className="w-100">
                       <div className="d-flex justify-content-between">
-                        <h5 className="m-0">Master of Science</h5>
-
+                        <div>
+                          <h5 className="m-0">Master of Science</h5>
+                          <strong className="d-block">Computer Science</strong>
+                          <span className="label-lite">
+                            Aug 2019 - Dec 2020
+                          </span>
+                        </div>
                         <span>GPA 3.7/4</span>
                       </div>
-                      <strong className="d-block">Computer Science</strong>
-
-                      <span className="label-lite">Aug 2019 - Dec 2020</span>
                     </div>
                   </div>
                 </div>
@@ -93,8 +98,11 @@ export default function Home() {
               </a>
               <div>
                 <div className="card-header">
-                  <div className="mobile-view">
-                    <figure style={{ background: "#680000" }}>
+                  <div className="d-flex">
+                    <figure
+                      style={{ background: "#680000" }}
+                      className="mobile-view"
+                    >
                       <img
                         src={require("../assets/cit.png")}
                         class="card-img-top"
@@ -102,16 +110,20 @@ export default function Home() {
                         alt="..."
                       />
                     </figure>
-                    <div>
+                    <div className="w-100">
                       <div className="d-flex justify-content-between">
-                        <h5 className="m-0">Bachelor of Technology</h5>
+                        <div>
+                          <h5 className="m-0">Bachelor of Technology</h5>
+                          <strong className="d-block">
+                            Information Technology
+                          </strong>
+
+                          <span className="label-lite">
+                            July 2012 - May 2016
+                          </span>
+                        </div>
                         <span>GPA 3.7/4</span>
                       </div>
-                      <strong className="d-block">
-                        Information Technology
-                      </strong>
-
-                      <span className="label-lite">July 2012 - May 2016</span>
                     </div>
                   </div>
                 </div>
@@ -137,8 +149,7 @@ export default function Home() {
       <hr />
       <section name="skills" className="section">
         <h2>Technical Skills</h2>
-        <div>Web Technologies:</div>
-        <ul style={{ clear: "both", padding: 0 }}>
+        <ul style={{ clear: "both", padding: 10 }}>
           <li>Programming Language: Python, C and C++</li>
           <li>
             Web Development: JavaScript, JQuery, ReactJS, Angular JS, HTML, CSS,
