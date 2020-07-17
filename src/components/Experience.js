@@ -2,13 +2,29 @@ import React from "react";
 
 export default function Author(props) {
   return (
-    <section name="professional-exp" className="section">
+    <section className="section professional-exp">
       <h2>Professional Experience</h2>
 
       <div className="card mb-3">
-        <div className="card-header d-flex justify-content-between">
-          <label>Software Engineer Intern, Twine Labs</label>
-          <label>Jun 2020 - Aug 2020</label>
+        <div className="card-header d-flex">
+          <a href="http://www.twinelabs.com/" target="blank">
+            <figure>
+              <img
+                src={require("../assets/twine_logo.png")}
+                height={50}
+                alt="..."
+              />
+            </figure>
+          </a>
+
+          <div className="d-flex flex-grow-1 justify-content-between align-items-center">
+            <label>
+              <b>
+                Software Engineer Intern <br /> Twine Labs, NY
+              </b>
+            </label>
+            <label>Jun 2020 - Aug 2020</label>
+          </div>
         </div>
         <div className="card-body">
           <ul className="py-3 m-0">
@@ -31,9 +47,25 @@ export default function Author(props) {
         </div>
       </div>
       <div className="card">
-        <div className="card-header d-flex justify-content-between">
-          <label>Software Engineer, Tavant Technologies, India</label>
-          <label>Aug 2016 - Jun 2019</label>
+        <div className="card-header d-flex">
+          <a href="http://www.tavant.com/" target="blank">
+            <figure>
+              <img
+                src={require("../assets/tavant-logo.png")}
+                height={50}
+                alt="..."
+              />
+            </figure>
+          </a>
+
+          <div className="d-flex flex-grow-1 ml-2 justify-content-between align-items-center">
+            <label>
+              <b>
+                Software Engineer <br /> Tavant Technologies, India
+              </b>
+            </label>
+            <label>Aug 2016 - Jun 2019</label>
+          </div>
         </div>
         <div className="card-body">
           <h6>Summary:</h6>

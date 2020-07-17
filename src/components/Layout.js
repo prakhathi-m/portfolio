@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { FaHome, FaLinkedin, FaGithub } from "react-icons/fa";
+import { MdMailOutline } from "react-icons/md";
 import "../styles/aboutme.scss";
 import Projects from "./Projects";
 import Home from "./Home";
 import Experience from "./Experience";
 
 export default function AboutMe() {
-  const [tab, setTab] = useState("home");
+  const [tab, setTab] = useState("experience");
 
   return (
     <div>
@@ -16,7 +17,7 @@ export default function AboutMe() {
             onClick={() => setTab("home")}
             className={tab === "home" ? "active" : ""}
           >
-            <FaHome size={20} color={tab === "home" ? "#1b4d6f" : "#000"} />
+            <FaHome size={22} color={tab === "home" ? "#1b4d6f" : "#000"} />
           </li>
           <li
             onClick={() => setTab("projects")}
@@ -72,6 +73,14 @@ export default function AboutMe() {
               rel="noopener noreferrer"
             >
               <FaGithub size={20} />
+            </a>
+            <a
+              href="mailto:prakhath@buffalo.edu"
+              target="blank"
+              id="mail"
+              rel="noopener noreferrer"
+            >
+              <MdMailOutline size={24} />
             </a>
           </div>
         </nav>

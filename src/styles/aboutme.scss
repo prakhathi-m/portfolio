@@ -11,13 +11,14 @@ header {
       cursor: pointer;
       .menu-underline {
         display: block;
-        height: 1px;
+        height: 2px;
         background: #1b4d6f;
         width: 0;
       }
       &:hover,
       &.active {
         color: #1b4d6f;
+        font-weight: 600;
         .menu-underline {
           width: 100%;
           -webkit-transition: all 0.5s;
@@ -50,17 +51,24 @@ header {
     }
     .contact {
       a {
+        color: #888383;
         padding: 5px;
         &#linkedin {
-          color: #0073b1;
+          // color: #0073b1;
           &:hover {
             color: #006097;
           }
         }
         &#github {
-          color: #000;
+          // color: #000;
           &:hover {
             color: #031705;
+          }
+        }
+        &#mail {
+          // color: #f13749;
+          &:hover {
+            color: #960e1b;
           }
         }
         &:hover {
@@ -131,6 +139,14 @@ header {
       }
     }
 
+    .professional-exp {
+      .card-header {
+        figure {
+          margin: 0;
+        }
+      }
+    }
+
     .project-wrapper {
       .border {
         padding: 5px;
@@ -140,6 +156,7 @@ header {
         position: relative;
         padding: 0;
         height: 300px;
+        margin: 0;
 
         img {
           width: 100%;

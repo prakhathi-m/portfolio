@@ -30,17 +30,19 @@ export default function Home() {
               <div>
                 <div className="card-header">
                   <div className="d-flex">
-                    <figure
-                      style={{ background: "#015dbc" }}
-                      className="mobile-view"
-                    >
-                      <img
-                        src={require("../assets/ub.jpg")}
-                        class="card-img-top"
-                        width={250}
-                        alt="..."
-                      />
-                    </figure>
+                    <a href="http://www.buffalo.edu/" target="blank">
+                      <figure
+                        style={{ background: "#015dbc" }}
+                        className="mobile-view"
+                      >
+                        <img
+                          src={require("../assets/ub.jpg")}
+                          class="card-img-top"
+                          width={250}
+                          alt="..."
+                        />
+                      </figure>
+                    </a>
                     <div className="w-100">
                       <div className="d-flex justify-content-between">
                         <div>
@@ -99,17 +101,19 @@ export default function Home() {
               <div>
                 <div className="card-header">
                   <div className="d-flex">
-                    <figure
-                      style={{ background: "#680000" }}
-                      className="mobile-view"
-                    >
-                      <img
-                        src={require("../assets/cit.png")}
-                        class="card-img-top"
-                        style={{ width: 60 }}
-                        alt="..."
-                      />
-                    </figure>
+                    <a href="https://www.cit.edu.in/" target="blank">
+                      <figure
+                        style={{ background: "#680000" }}
+                        className="mobile-view"
+                      >
+                        <img
+                          src={require("../assets/cit.png")}
+                          class="card-img-top"
+                          style={{ width: 60 }}
+                          alt="..."
+                        />
+                      </figure>
+                    </a>
                     <div className="w-100">
                       <div className="d-flex justify-content-between">
                         <div>

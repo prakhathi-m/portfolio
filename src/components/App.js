@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/App.scss";
-import AboutMe from "./AboutMe";
+import MainLayout from "./Layout";
 
 const App = () => {
   const [aboutMe, setAboutMe] = useState(true);
@@ -20,7 +20,7 @@ const App = () => {
         </div>
       ) : (
         <main>
-          <AboutMe goBack={() => setAboutMe(false)} />
+          <MainLayout goBack={() => setAboutMe(false)} />
         </main>
       )}
     </div>
