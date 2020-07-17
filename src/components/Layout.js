@@ -7,7 +7,7 @@ import Home from "./Home";
 import Experience from "./Experience";
 
 export default function AboutMe() {
-  const [tab, setTab] = useState("experience");
+  const [tab, setTab] = useState("home");
 
   return (
     <div>
