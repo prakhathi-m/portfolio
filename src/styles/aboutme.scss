@@ -141,9 +141,14 @@ header {
 
     .professional-exp {
       .card-header {
+        background-color: rgb(234, 244, 248);
+
         figure {
           margin: 0;
         }
+      }
+      .card-footer {
+        background-color: rgb(234, 244, 248);
       }
     }
 

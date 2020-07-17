@@ -66,7 +66,7 @@ const Projects = () => {
           <div className="col-xl-6 col-lg-12 col-md-12 col-12 mb-4">
             <div className="border">
               <figure className="effect">
-                <img src={require("../assets/twitter.png")} />
+                <img src={require("../assets/twitter.jpeg")} />
                 <figcaption>
                   <h5>Multi-lingual Search System</h5>
                   <p>
@@ -76,8 +76,10 @@ const Projects = () => {
                   </p>
                   <hr />
                   <p>
-                    Tech Stack: ReactJs, Python Flask, Material-UI, Apache Solr,
-                    AWS (EC2), Google Charts
+                    <b>
+                      Tech Stack: ReactJs, Python Flask, Material-UI, Apache
+                      Solr, AWS (EC2), Google Charts
+                    </b>
                   </p>
                   <div>
                     <a

@@ -43,7 +43,7 @@ export default function Author(props) {
           </ul>
         </div>
         <div className="card-footer">
-          <p>Tech Stack: ReactJs, Redux, Django, PostgreSQL, AWS</p>
+          Tech Stack: ReactJs, Redux, Django, PostgreSQL, AWS
         </div>
       </div>
       <div className="card">
