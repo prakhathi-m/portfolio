@@ -120,6 +120,13 @@ const Projects = () => {
                     <a href="https://photos.app.goo.gl/9ytGdnizQU2DeLydA">
                       <FaLink size={20} />
                     </a>
+                    <a
+                      className="ml-2"
+                      href="https://github.com/prakhathi-m/EntertainMe"
+                      target="blank"
+                    >
+                      <FaGithub size={20} />
+                    </a>
                     <a href="" className="ml-2">
                       <FaDownload size={20} />
                     </a>
