@@ -40,20 +40,27 @@ export default function AboutMe() {
         <nav className="sidenav">
           <div>
             <h1 className="mb-3">Prakhathi Murugesan</h1>
+            <div className="line animate-line">
+              I love to code and develop web applications.
+            </div>
             <figure>
               <img
                 src={require("../assets/profile_pic.jpg")}
                 alt="Profile"
                 style={{ width: "50%", borderRadius: "50%" }}
               />
-              <figcaption>
-                I'm a graduate student pursuing Master's of Science in Computer
-                Science at University at Buffalo - SUNY. I'm currently doing an
-                internship at Twine labs. I started my career as a web developer
-                right after my Bachelor's and I was intrigued by the working of
-                browser and frontend development. Since then, I have developed
-                various multiplatform web solutions and mobile applications
-                using modern JavaScript Frameworks.
+              <figcaption style={{ textAlign: "justify" }}>
+                I’m an international student currently pursuing Masters in
+                Computer Science at UB with the graduation date on Dec 2020.
+                Right after undergrad, I worked as a web developer that’s when I
+                discovered my interest in developing web & mobile applications.
+                From building websites, consuming API to building API, I
+                stumbled, learned, and evolved. Throughout my experience, the
+                one thing I have taken to my heart is to always think of the
+                ways to build a reusable optimized component. I have built
+                various Multiplatform responsive customer-facing web solutions
+                using modern Javascript frameworks which include ReactJs, Redux,
+                NodeJs.
               </figcaption>
             </figure>
           </div>

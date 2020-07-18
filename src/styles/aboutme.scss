@@ -72,7 +72,7 @@ header {
           }
         }
         &:hover {
-          // transform: scale(1.5);
+          transform: translateY(-6px);
           transition: all 1s ease;
         }
       }
@@ -88,6 +88,12 @@ header {
       }
       &:nth-child(2n-1) {
         // background: #f9f7f7;
+      }
+      .card {
+        .card-header,
+        .card-footer {
+          background-color: rgb(234, 244, 248);
+        }
       }
       &.education {
         // padding: 10% 0 10% 20%;
@@ -141,14 +147,9 @@ header {
 
     .professional-exp {
       .card-header {
-        background-color: rgb(234, 244, 248);
-
         figure {
           margin: 0;
         }
-      }
-      .card-footer {
-        background-color: rgb(234, 244, 248);
       }
     }
 
@@ -278,7 +279,7 @@ header {
   }
 }
 
-@media (max-width: 756px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 32px;
   }
@@ -300,5 +301,11 @@ header {
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .wrapper article .project-wrapper figure {
+    height: 380px;
   }
 }

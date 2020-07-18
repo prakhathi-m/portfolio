@@ -43,45 +43,62 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
-  .line {
-    color: black;
-    border-right: 2px solid rgba(0, 0, 0, 0.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-  }
-
-  /* Animation */
-  .animate-line {
-    animation: typewriter 4s steps(44) 1s 1 normal both,
-      blinkTextCursor 500ms steps(44) infinite normal;
-  }
-  @keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 24em;
-    }
-  }
-  @keyframes blinkTextCursor {
-    from {
-      border-right-color: rgba(0, 0, 0, 0.75);
-    }
-    to {
-      border-right-color: transparent;
-    }
-  }
 }
-
 .label-lite {
   color: #8c8a8a;
 }
+
+.line {
+  color: #015dbc;
+  margin: auto;
+  border-right: 2px solid rgb(1, 93, 188);
+  font-size: 130%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-34%);
+}
+
+/* Animation */
+.animate-line {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(23, 96, 231, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .line {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .line {
+    font-size: 98%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .intro-wrapper button {
     min-width: 200px;
+  }
+  .line {
+    font-size: 105%;
   }
 }

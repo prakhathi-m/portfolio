@@ -130,6 +130,14 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      {/* <iframe
+        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6690287763876642816"
+        height="680"
+        width="504"
+        frameborder="0"
+        allowfullscreen=""
+        title="Embedded post"
+      ></iframe> */}
     </section>
   );
 };
