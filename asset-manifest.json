@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0d922056.chunk.css",
-    "main.js": "/portfolio/static/js/main.0d27ff6d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0d27ff6d.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.2c2887b8.chunk.css",
+    "main.js": "/portfolio/static/js/main.7c2a3abc.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7c2a3abc.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.829c9cb5.chunk.css": "/portfolio/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.3db274ef.chunk.js": "/portfolio/static/js/2.3db274ef.chunk.js",
-    "static/js/2.3db274ef.chunk.js.map": "/portfolio/static/js/2.3db274ef.chunk.js.map",
+    "static/js/2.e6dddd52.chunk.js": "/portfolio/static/js/2.e6dddd52.chunk.js",
+    "static/js/2.e6dddd52.chunk.js.map": "/portfolio/static/js/2.e6dddd52.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.17e620bb292af2c22771027fa674ed66.js": "/portfolio/precache-manifest.17e620bb292af2c22771027fa674ed66.js",
+    "precache-manifest.929615263cb940fc64edeef87f5659b7.js": "/portfolio/precache-manifest.929615263cb940fc64edeef87f5659b7.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/portfolio/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.0d922056.chunk.css.map": "/portfolio/static/css/main.0d922056.chunk.css.map",
-    "static/js/2.3db274ef.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3db274ef.chunk.js.LICENSE.txt",
+    "static/css/main.2c2887b8.chunk.css.map": "/portfolio/static/css/main.2c2887b8.chunk.css.map",
+    "static/js/2.e6dddd52.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e6dddd52.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/portfolio/static/media/bg.825c91cf.jpg",
     "static/media/cit.png": "/portfolio/static/media/cit.6590ff10.png",
     "static/media/em_app.png": "/portfolio/static/media/em_app.34c35866.png",
     "static/media/profile_pic.jpg": "/portfolio/static/media/profile_pic.1a8e6ff2.jpg",
+    "static/media/skills.png": "/portfolio/static/media/skills.8a90d77d.png",
     "static/media/stearns_1.png": "/portfolio/static/media/stearns_1.b363f6ff.png",
     "static/media/twine.png": "/portfolio/static/media/twine.9795b593.png",
     "static/media/twine_logo.png": "/portfolio/static/media/twine_logo.3d6c52f0.png",
@@ -27,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.3db274ef.chunk.js",
-    "static/css/main.0d922056.chunk.css",
-    "static/js/main.0d27ff6d.chunk.js"
+    "static/js/2.e6dddd52.chunk.js",
+    "static/css/main.2c2887b8.chunk.css",
+    "static/js/main.7c2a3abc.chunk.js"
   ]
 }
