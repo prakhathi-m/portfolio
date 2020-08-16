@@ -1,6 +1,12 @@
+@import "./theme.scss";
+
+main {
+  background: $secondary-color;
+}
 header {
-  background: white;
+  background: $white;
   z-index: 1;
+  background: $primary-bold-color;
 
   ul {
     margin: 0;
@@ -8,16 +14,18 @@ header {
       display: inline-block;
       list-style: none;
       padding: 10px;
+      color: $primary-text-color;
       cursor: pointer;
+
       .menu-underline {
         display: block;
         height: 2px;
-        background: #1b4d6f;
+        background: $primary-text-color;
         width: 0;
       }
       &:hover,
       &.active {
-        color: #1b4d6f;
+        // color: #1b4d6f;
         font-weight: 600;
         .menu-underline {
           width: 100%;
@@ -31,22 +39,23 @@ header {
   }
 }
 
-.wrapper {
+article.wrapper {
   padding: 60px 0 0;
   .sidenav {
-    width: 40%;
+    // width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
     padding: 20px;
     text-align: center;
     flex-direction: column;
-    background: #eaf4f9;
-    position: fixed;
+    background: $secondary-color;
+    // position: fixed;
 
     figure {
       img {
         margin-bottom: 20px;
+        width: 250px;
       }
     }
     .contact {
@@ -78,161 +87,169 @@ header {
       }
     }
   }
-  article {
-    margin-left: 41%;
-    margin-right: 20px;
-    section {
-      padding: 25px;
-      h2 {
-        margin-bottom: 20px;
+  // margin-left: 41%;
+  // margin-right: 20px;
+  section {
+    max-width: 1140px;
+    margin: auto;
+    padding: 25px;
+    h2 {
+      margin-bottom: 20px;
+    }
+    &:nth-child(2n-1) {
+      // background: #f9f7f7;
+    }
+    .card {
+      .card-header,
+      .card-footer {
+        background-color: $light-grey;
       }
-      &:nth-child(2n-1) {
-        // background: #f9f7f7;
+    }
+    &.education {
+      // padding: 10% 0 10% 20%;
+      .row {
+        > div {
+          flex: 0 0 50%;
+          max-width: 50%;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
       }
       .card {
-        .card-header,
-        .card-footer {
-          background-color: rgb(234, 244, 248);
-        }
-      }
-      &.education {
-        // padding: 10% 0 10% 20%;
-        .row {
-          > div {
-            flex: 0 0 50%;
-            max-width: 50%;
-            padding-right: 15px;
-            padding-left: 15px;
-          }
-        }
-        .card {
-          height: 100%;
-        }
-        .mobile-view {
-          display: none;
-        }
-        figure {
-          position: relative;
-          margin: 0;
-          text-align: center;
-          height: 300px;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-          img {
-            width: 50%;
-          }
-          figcaption {
-            position: absolute;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Black see-through */
-            color: #f1f1f1;
-            width: 100%;
-            padding: 5px;
-          }
-        }
-      }
-
-      .accordion {
-        .card {
-          border-left: 0;
-          border-right: 0;
-          ul {
-            padding-bottom: 25px;
-          }
-        }
-      }
-    }
-
-    .professional-exp {
-      .card-header {
-        figure {
-          margin: 0;
-        }
-      }
-    }
-
-    .project-wrapper {
-      .border {
-        padding: 5px;
         height: 100%;
       }
       figure {
         position: relative;
-        padding: 0;
-        height: 300px;
         margin: 0;
-
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        height: 70px;
         img {
-          width: 100%;
-          height: 100%;
+          width: 50%;
         }
         figcaption {
-          padding: 20px 30px;
           position: absolute;
-          top: 0px;
-          left: 0px;
-          height: 100%;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5); /* Black see-through */
+          color: #f1f1f1;
           width: 100%;
-          h5 {
-            padding-bottom: 15px;
-            &:after {
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 100%;
-              height: 2px;
-              background: #fff;
-              content: "";
-              -webkit-transform: translate3d(-100%, 0, 0);
-              transform: translate3d(-100%, 0, 0);
-            }
-          }
-          p {
-            margin: 0;
-            padding-bottom: 10px;
-            -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-          }
-          a {
-            color: white;
-            &:hover {
-              color: #c1c4c5;
-            }
-          }
-          hr {
-            margin: 5px 0;
-            padding: 0;
-            border-color: #fff;
-          }
-          > * {
-            position: relative;
-            overflow: hidden;
-            padding-bottom: 20px;
-            opacity: 0;
-            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
+          padding: 5px;
+        }
+      }
+    }
+
+    &.skills {
+      figure {
+        border: 1px solid #ccc;
+        background: $white;
+      }
+      .skill-img {
+        width: 820px;
+      }
+    }
+
+    .accordion {
+      .card {
+        border-left: 0;
+        border-right: 0;
+        ul {
+          padding-bottom: 25px;
+        }
+      }
+    }
+  }
+
+  &.professional-exp {
+    .card-header {
+      figure {
+        margin: 0;
+      }
+    }
+  }
+
+  .project-wrapper {
+    .border {
+      padding: 5px;
+      height: 100%;
+    }
+    figure {
+      position: relative;
+      padding: 0;
+      height: 300px;
+      margin: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      figcaption {
+        padding: 20px 30px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        h5 {
+          padding-bottom: 15px;
+          &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $white;
+            content: "";
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
           }
         }
-        &.effect {
-          background: #858586;
-          color: #fff;
-          overflow: hidden;
+        p {
+          margin: 0;
+          padding-bottom: 10px;
+          -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+        }
+        a {
+          color: $white;
           &:hover {
-            img {
-              opacity: 0.2;
+            color: #c1c4c5;
+          }
+        }
+        hr {
+          margin: 5px 0;
+          padding: 0;
+          border-color: $white;
+        }
+        > * {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 20px;
+          opacity: 0;
+          -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+          transition: opacity 0.35s, transform 0.35s;
+        }
+      }
+      &.effect {
+        background: #696969;
+        color: $white;
+        overflow: hidden;
+        &:hover {
+          img {
+            opacity: 0.2;
+          }
+          figcaption {
+            h5:after {
+              transform: translate3d(0, 0, 0);
             }
-            figcaption {
-              h5:after {
-                transform: translate3d(0, 0, 0);
-              }
-              p {
-                transform: translate3d(0, 0, 0);
-              }
-              > * {
-                opacity: 1;
-              }
+            p {
+              transform: translate3d(0, 0, 0);
+            }
+            > * {
+              opacity: 1;
             }
           }
         }
@@ -242,43 +259,60 @@ header {
 }
 
 @media (max-width: 1299px) {
-  .wrapper article section.education {
-    .row {
-      a {
-        display: none;
-      }
-      > div {
-        flex: 0 0 100%;
-        max-width: 100%;
-        figure.mobile-view {
-          display: flex;
-          width: 60px;
-          height: 60px;
-          margin-right: 20px;
-        }
-        .card-header {
-          .d-flex {
-            > div:last-child {
-              flex-grow: 1;
+  article.wrapper section {
+    &.education {
+      .row {
+        > div {
+          flex: 0 0 100%;
+          max-width: 100%;
+          figure.mobile-view {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+          }
+          .card-header {
+            .d-flex {
+              > div:last-child {
+                flex-grow: 1;
+              }
             }
           }
         }
       }
-    }
-    .card {
-      display: flex;
-      flex-direction: row;
-      figure.desktop-view {
-        width: 300px;
-        height: 100%;
+      .card {
+        display: flex;
+        flex-direction: row;
+        figure.desktop-view {
+          width: 300px;
+          height: 100%;
+        }
+        > div:last-child {
+          flex-grow: 1;
+        }
       }
-      > div:last-child {
-        flex-grow: 1;
+    }
+
+    &.skills {
+      .skill-img {
+        width: 820px;
       }
     }
   }
 }
 
+@media (max-width: 999px) {
+  article.wrapper section {
+    .project-wrapper {
+      max-width: 780px;
+      margin: auto;
+
+      figure {
+        height: 400px;
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   h1 {
     font-size: 32px;
@@ -293,19 +327,37 @@ header {
         justify-content: center;
       }
     }
-    article {
-      margin: 0;
-      section {
-        h2 {
-          font-size: 30px;
-        }
+
+    margin: 0;
+    section {
+      h2 {
+        font-size: 30px;
       }
     }
+  }
+  article.wrapper section.skills .skill-img {
+    width: 500px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .wrapper article .project-wrapper figure {
+  article.wrapper .project-wrapper figure {
     height: 380px;
+  }
+  article.wrapper section.skills .skill-img {
+    width: 320px;
+  }
+  article.wrapper section {
+    &.education,
+    &.professional-exp {
+      .card-header .d-flex {
+        flex-direction: column;
+        align-items: start !important;
+
+        > div:last-child {
+          padding-top: 20px;
+        }
+      }
+    }
   }
 }

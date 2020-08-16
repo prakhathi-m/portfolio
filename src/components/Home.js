@@ -3,47 +3,35 @@ import React from "react";
 export default function Home() {
   return (
     <React.Fragment>
+      <section name="skills" className="section skills">
+        <h2>Technical Skills</h2>
+        <figure className="text-center">
+          <img
+            src={require("../assets/skills.png")}
+            className="skill-img"
+            alt="..."
+          />
+        </figure>
+      </section>
       <section name="education" className="section education">
         <h2>Education</h2>
         <div className="row">
           <div className="mb-4">
-            <div class="card">
-              <a href="http://www.buffalo.edu/" target="blank">
-                <figure
-                  style={{ background: "#015dbc" }}
-                  className="desktop-view"
-                >
-                  <img
-                    src={require("../assets/ub.jpg")}
-                    class="card-img-top"
-                    width={250}
-                    alt="..."
-                  />
-                  <figcaption>
-                    <strong class="card-title">University at Buffalo</strong>
-                    <span className="d-block">
-                      The State University of New York
-                    </span>
-                  </figcaption>
-                </figure>
-              </a>
+            <div className="card">
               <div>
                 <div className="card-header">
                   <div className="d-flex">
                     <a href="http://www.buffalo.edu/" target="blank">
-                      <figure
-                        style={{ background: "#015dbc" }}
-                        className="mobile-view"
-                      >
+                      <figure style={{ background: "#015dbc" }}>
                         <img
                           src={require("../assets/ub.jpg")}
-                          class="card-img-top"
-                          width={250}
+                          className="card-img-top"
+                          width={60}
                           alt="..."
                         />
                       </figure>
                     </a>
-                    <div className="w-100">
+                    <div className="w-100 px-2">
                       <div className="d-flex justify-content-between">
                         <div>
                           <h5 className="m-0">Master of Science</h5>
@@ -57,7 +45,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div class="card-body">
+                <div className="card-body">
                   <div className="label-lite">Coursework:</div>
                   <p className="card-text">
                     <ul>
@@ -70,7 +58,7 @@ export default function Home() {
                       <label>(* - planned for upcoming semesters)</label>
                     </ul>
                   </p>
-                  {/* <a href="#" class="btn btn-primary">
+                  {/* <a href="#" className="btn btn-primary">
                   Go somewhere
                 </a> */}
                 </div>
@@ -78,43 +66,21 @@ export default function Home() {
             </div>
           </div>
           <div className="mb-4">
-            <div class="card">
-              <a href="https://www.cit.edu.in/" target="blank">
-                <figure
-                  style={{ background: "#680000" }}
-                  className="desktop-view"
-                >
-                  <img
-                    src={require("../assets/cit.png")}
-                    class="card-img-top"
-                    width={150}
-                    alt="..."
-                  />
-                  <figcaption>
-                    <strong class="card-title">
-                      Coimbatore Institute of Technology
-                    </strong>
-                    <span className="d-block">India</span>
-                  </figcaption>
-                </figure>
-              </a>
+            <div className="card">
               <div>
                 <div className="card-header">
                   <div className="d-flex">
                     <a href="https://www.cit.edu.in/" target="blank">
-                      <figure
-                        style={{ background: "#680000" }}
-                        className="mobile-view"
-                      >
+                      <figure style={{ background: "#680000" }}>
                         <img
                           src={require("../assets/cit.png")}
-                          class="card-img-top"
+                          className="card-img-top"
                           style={{ width: 60 }}
                           alt="..."
                         />
                       </figure>
                     </a>
-                    <div className="w-100">
+                    <div className="w-100 px-2">
                       <div className="d-flex justify-content-between">
                         <div>
                           <h5 className="m-0">Bachelor of Technology</h5>
@@ -131,7 +97,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div class="card-body">
+                <div className="card-body">
                   <div className="label-lite">Coursework:</div>
                   <p className="card-text">
                     <ul>
@@ -149,30 +115,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <hr />
-      <section name="skills" className="section">
-        <h2>Technical Skills</h2>
-        <ul style={{ clear: "both", padding: 10 }}>
-          <li>Programming Language: Python, C and C++</li>
-          <li>
-            Web Development: JavaScript, JQuery, ReactJS, Angular JS, HTML, CSS,
-            LESS, SASS, Bootstrap, Ajax, XML, XQuery, JSON.
-          </li>
-          <li>
-            Frameworks and Libraries: React-Native, Redux, Redux-saga, Hadoop
-            MapReduce, Apache Spark, and Material-UI
-          </li>
-          <li>Unit Testing Framework: Jasmine, Jest and Enzyme</li>
-          <li>Version Control: SVN, GIT</li>
-          <li>Database: MySQL, MSSQL, PostgreSQL and Heidi SQL</li>
-          <li>Project Management Tools: Jira and Trello</li>
-          <li>
-            Visualization Tools – Recharts, Google Chart, D3.js and Highcharts
-          </li>
-          <li>Agile Workflow Process</li>
-          <li>Web Optimization</li>
-        </ul>
       </section>
     </React.Fragment>
   );

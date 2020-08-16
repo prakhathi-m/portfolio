@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Author(props) {
   return (
-    <section className="section professional-exp">
+    <section className="section professional-exp p-4">
       <h2>Professional Experience</h2>
 
       <div className="card mb-3">
@@ -33,12 +33,24 @@ export default function Author(props) {
               friendly, responsive web applications.
             </li>
             <li>
-              Developed mobile-friendly landing page coupled with in-built
-              carousel and animations.{" "}
+              Implemented Django models to capture the details of the user
+              request and notify them in the slack channel.
             </li>
             <li>
-              Implemented forms to capture the details of user and save it in
-              database and notify the new lead in slack channel.
+              Converted Figma Wireframes into interactive user-facing features
+              coupled with in-built carousel and animations using React hooks.
+            </li>
+            <li>
+              Developed a user rating module for the coming-soon feature using
+              Django and ReactJs to gain user interest.
+            </li>
+            <li>
+              Reimplemented few functionalities which previously used Redux into
+              in-built custom React hooks.
+            </li>
+            <li>
+              Implemented the new analytics dashboard as a part of the core
+              product.
             </li>
           </ul>
         </div>
