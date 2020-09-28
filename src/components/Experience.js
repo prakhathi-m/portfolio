@@ -112,13 +112,13 @@ export default function Author(props) {
               no cross-browser compatibility issues.
             </li>
           </ul>
-          <h6>Projects:</h6>
         </div>
         <div>
+          <h6 style={{ padding: "0 1.25rem", fontSize: 18 }}>Projects:</h6>
           <div className="accordion">
             <div className="card">
               <div className="card-header" id="headingOne">
-                <h6 className="mb-0">Web Service Project for a Client</h6>
+                <h6 className="mb-0">1. Web Service Project for a Client</h6>
               </div>
 
               <div className="card-body">
@@ -151,7 +151,7 @@ export default function Author(props) {
             <div className="card">
               <div className="card-header" id="headingThree">
                 <h6 className="mb-0">
-                  Feedback and Monitoring Application for Internal Teams
+                  2. Feedback and Monitoring Application for Internal Teams
                 </h6>
               </div>
 
@@ -173,7 +173,9 @@ export default function Author(props) {
             </div>
             <div className="card">
               <div className="card-header" id="headingTwo">
-                <h6 className="mb-0">Web Modernization Project for a Client</h6>
+                <h6 className="mb-0">
+                  3. Web Modernization Project for a Client
+                </h6>
               </div>
 
               <div className="card-body">

@@ -1,29 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/App.scss";
 import MainLayout from "./Layout";
 
 const App = () => {
-  const [aboutMe, setAboutMe] = useState(true);
-
   return (
-    <div>
-      {aboutMe === false ? (
-        <div className={aboutMe ? "hide" : "app-container"}>
-          <section className="intro-wrapper">
-            <div className="line animate-line">
-              Hi, I'm Prakhathi. I love to code and develop web applications.
-            </div>
-            <button className="primary-button" onClick={() => setAboutMe(true)}>
-              More about me
-            </button>
-          </section>
+    <React.Fragment>
+      <main>
+        <MainLayout />
+      </main>
+      <div className="animation-area">
+        <div className="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-      ) : (
-        <main>
-          <MainLayout goBack={() => setAboutMe(false)} />
-        </main>
-      )}
-    </div>
+      </div>
+    </React.Fragment>
   );
 };
 

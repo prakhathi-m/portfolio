@@ -1,7 +1,10 @@
 @import "./theme.scss";
 
 main {
-  background: $secondary-color;
+  min-height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 header {
   background: $white;
@@ -42,15 +45,12 @@ header {
 article.wrapper {
   padding: 60px 0 0;
   .sidenav {
-    // width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
     padding: 20px;
     text-align: center;
     flex-direction: column;
-    background: $secondary-color;
-    // position: fixed;
 
     figure {
       img {
@@ -80,6 +80,14 @@ article.wrapper {
             color: #960e1b;
           }
         }
+
+        &#resume {
+          // color: #f13749;
+          &:hover {
+            color: #1893da;
+          }
+        }
+
         &:hover {
           transform: translateY(-6px);
           transition: all 1s ease;
@@ -87,8 +95,6 @@ article.wrapper {
       }
     }
   }
-  // margin-left: 41%;
-  // margin-right: 20px;
   section {
     max-width: 1140px;
     margin: auto;
@@ -179,7 +185,7 @@ article.wrapper {
     figure {
       position: relative;
       padding: 0;
-      height: 300px;
+      height: 400px;
       margin: 0;
 
       img {
@@ -253,6 +259,21 @@ article.wrapper {
             }
           }
         }
+      }
+    }
+
+    .tile {
+      a {
+        color: $primary-bold-color;
+        &:hover {
+          color: #0056b3;
+          transform: translateY(-6px);
+          transition: all 1s ease;
+        }
+      }
+      .title {
+        display: flex;
+        justify-content: space-between;
       }
     }
   }
@@ -337,6 +358,10 @@ article.wrapper {
   }
   article.wrapper section.skills .skill-img {
     width: 500px;
+  }
+  article.wrapper .project-wrapper .tile .title {
+    flex-direction: column;
+    justify-content: baseline;
   }
 }
 

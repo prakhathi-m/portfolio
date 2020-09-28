@@ -1,10 +1,17 @@
 import React, { useState } from "react";
-import { FaHome, FaLinkedin, FaGithub } from "react-icons/fa";
+import {
+  FaHome,
+  FaLinkedin,
+  FaGithub,
+  FaDownload,
+  FaFileAlt,
+} from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import "../styles/aboutme.scss";
 import Projects from "./Projects";
 import Home from "./Home";
 import Experience from "./Experience";
+import "../styles/App.scss";
 
 export default function AboutMe() {
   const [tab, setTab] = useState("home");
@@ -47,57 +54,80 @@ export default function AboutMe() {
         {tab === "home" && (
           <section className="sidenav">
             <div>
-              <h1 className="mb-3">Prakhathi Murugesan</h1>
+              <h1 className="pb-4">Prakhathi Murugesan</h1>
               <div className="line animate-line">
                 I love to code and develop web applications.
               </div>
-              <figure>
+              <figure className="py-4">
                 <img
                   src={require("../assets/profile_pic.jpg")}
                   alt="Profile"
                   style={{ width: "250px", borderRadius: "50%" }}
                 />
+                <div className="d-flex contact justify-content-center mb-3">
+                  <a
+                    href="https://www.linkedin.com/in/prakhathimurugesan/"
+                    target="_blank"
+                    id="linkedin"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin size={20} />
+                  </a>
+                  <a
+                    href="https://github.com/prakhathi-m"
+                    target="blank"
+                    id="github"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub size={20} />
+                  </a>
+                  <a
+                    href="mailto:prakhath@buffalo.edu"
+                    target="blank"
+                    id="mail"
+                    rel="noopener noreferrer"
+                  >
+                    <MdMailOutline size={24} />
+                  </a>
+                  <a
+                    download
+                    href={require("../assets/Prakhathi-Resume.pdf")}
+                    id="resume"
+                  >
+                    <FaFileAlt size={18} />
+                  </a>
+                </div>
                 <figcaption style={{ textAlign: "justify" }}>
-                  I’m an international student currently pursuing Masters in
-                  Computer Science at UB with the graduation date on Dec 2020.
-                  Right after undergrad, I worked as a web developer that’s when
-                  I discovered my interest in developing web & mobile
-                  applications. From building websites, consuming API to
-                  building API, I stumbled, learned, and evolved. Throughout my
-                  experience, the one thing I have taken to my heart is to
-                  always think of the ways to build a reusable optimized
-                  component. I have built various Multiplatform responsive
-                  customer-facing web solutions using modern Javascript
-                  frameworks which include ReactJs, Redux, NodeJs.
+                  As a kid, I used to get fascinated by technology and science.
+                  I was amazed by the fact that technology is used to solve
+                  day-to-day problems. I love challenges; learning something new
+                  and solving problems is my sanctuary. My inclination towards
+                  problem-solving, analytical thinking and passion for
+                  technology led me to pursue a Bachelor's in Information
+                  technology and a Masters in Computer Science. <br /> <br />
+                  Right after undergrad, I started my career as a web developer.
+                  I have built various multi-platform responsive customer-facing
+                  web solutions. I took every opportunity available to learn
+                  more, which led me to do frontend, backend, and full-stack web
+                  development. From building websites & consuming API to
+                  building API, I stumbled, learned, and evolved. My passion and
+                  interest accelerated throughout my Master's program. The
+                  courses that I have taken stimulates my obsession with
+                  technology. 
+                  <br /> <br />I seek a challenging work environment that
+                  engages and motivates me to build beautiful and meaningful
+                  applications that could improve people's lives. 
                 </figcaption>
               </figure>
             </div>
-            <div className="d-flex contact">
-              <a
-                href="https://www.linkedin.com/in/prakhathimurugesan/"
-                target="_blank"
-                id="linkedin"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin size={20} />
-              </a>
-              <a
-                href="https://github.com/prakhathi-m"
-                target="blank"
-                id="github"
-                rel="noopener noreferrer"
-              >
-                <FaGithub size={20} />
-              </a>
-              <a
-                href="mailto:prakhath@buffalo.edu"
-                target="blank"
-                id="mail"
-                rel="noopener noreferrer"
-              >
-                <MdMailOutline size={24} />
-              </a>
-            </div>
+            <a
+              className="primary-button"
+              download
+              href={require("../assets/Prakhathi-Resume.pdf")}
+            >
+              <FaDownload size={20} style={{ marginBottom: 2 }} />{" "}
+              <span className="px-2">Resume</span>
+            </a>
           </section>
         )}
         {tab === "skills" && <Home />}
