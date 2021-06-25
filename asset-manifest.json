@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5d882b4f.chunk.css",
-    "main.js": "/portfolio/static/js/main.9e196563.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9e196563.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.723ed597.chunk.css",
+    "main.js": "/portfolio/static/js/main.34fd3adb.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.34fd3adb.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.829c9cb5.chunk.css": "/portfolio/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.784c10f3.chunk.js": "/portfolio/static/js/2.784c10f3.chunk.js",
-    "static/js/2.784c10f3.chunk.js.map": "/portfolio/static/js/2.784c10f3.chunk.js.map",
+    "static/js/2.42f5c4f3.chunk.js": "/portfolio/static/js/2.42f5c4f3.chunk.js",
+    "static/js/2.42f5c4f3.chunk.js.map": "/portfolio/static/js/2.42f5c4f3.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.cfd035dd9384f47a57caac57fad5485d.js": "/portfolio/precache-manifest.cfd035dd9384f47a57caac57fad5485d.js",
+    "precache-manifest.ca6df92e7746533a2e4eb06c0b3b1dfc.js": "/portfolio/precache-manifest.ca6df92e7746533a2e4eb06c0b3b1dfc.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/portfolio/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.5d882b4f.chunk.css.map": "/portfolio/static/css/main.5d882b4f.chunk.css.map",
-    "static/js/2.784c10f3.chunk.js.LICENSE.txt": "/portfolio/static/js/2.784c10f3.chunk.js.LICENSE.txt",
-    "static/media/Prakhathi-Resume.pdf": "/portfolio/static/media/Prakhathi-Resume.bd06a8a1.pdf",
+    "static/css/main.723ed597.chunk.css.map": "/portfolio/static/css/main.723ed597.chunk.css.map",
+    "static/js/2.42f5c4f3.chunk.js.LICENSE.txt": "/portfolio/static/js/2.42f5c4f3.chunk.js.LICENSE.txt",
+    "static/media/Prakhathi-Resume.pdf": "/portfolio/static/media/Prakhathi-Resume.92ffba0c.pdf",
+    "static/media/adp-logo.png": "/portfolio/static/media/adp-logo.89922de4.png",
     "static/media/cit.png": "/portfolio/static/media/cit.6590ff10.png",
     "static/media/em_app.png": "/portfolio/static/media/em_app.34c35866.png",
     "static/media/profile_pic.jpg": "/portfolio/static/media/profile_pic.1a8e6ff2.jpg",
@@ -28,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.784c10f3.chunk.js",
-    "static/css/main.5d882b4f.chunk.css",
-    "static/js/main.9e196563.chunk.js"
+    "static/js/2.42f5c4f3.chunk.js",
+    "static/css/main.723ed597.chunk.css",
+    "static/js/main.34fd3adb.chunk.js"
   ]
 }
