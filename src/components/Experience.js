@@ -4,8 +4,41 @@ export default function Author(props) {
   return (
     <section className="section professional-exp p-4">
       <h2>Professional Experience</h2>
-
       <div className="card mb-3">
+        <div className="card-header d-flex">
+          <a href="http://www.adp.com/" target="blank">
+            <figure>
+              <img
+                src={require("../assets/adp-logo.png")}
+                height={50}
+                width={70}
+                alt="..."
+              />
+            </figure>
+          </a>
+
+          <div className="d-flex flex-grow-1 ml-2 justify-content-between align-items-center">
+            <label>
+              <b>
+               Application Developer <br /> ADP Inc, NJ
+              </b>
+            </label>
+            <label>Mar 2021 - Present</label>
+          </div>
+        </div>
+        <div className="card-body">
+          <ul className="py-3 m-0">
+            <li>
+              Enhanced accessibility across multiple components by using semantic UI; supported internationalization of the application.
+            </li>
+          
+          </ul>
+        </div>
+        <div className="card-footer">
+          Tech Stack: ReactJs, Redux, Typescript
+        </div>
+      </div>
+      <div className="card">
         <div className="card-header d-flex">
           <a href="http://www.twinelabs.com/" target="blank">
             <figure>
@@ -23,7 +56,7 @@ export default function Author(props) {
                 Software Engineer Intern <br /> Twine Labs, NY
               </b>
             </label>
-            <label>Jun 2020 - Aug 2020</label>
+            <label>Jun 2020 - Dec 2020</label>
           </div>
         </div>
         <div className="card-body">
